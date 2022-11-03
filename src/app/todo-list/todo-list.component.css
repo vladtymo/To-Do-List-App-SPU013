@@ -1,0 +1,20 @@
+.text-center {
+    text-align: center;
+}
+
+.todo-item {
+    background-color: gainsboro;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid darkgray;
+    margin-bottom: 6px;
+}
+
+.todo-item:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.item-done {
+    background-color: lightseagreen;
+}
