@@ -9,9 +9,27 @@ import { IToDoItem } from './todo-item';
 })
 export class TodoListComponent {
 
+  currentItem: IToDoItem = {
+    name: "",
+    date: new Date(),
+    completed: false
+  };
   items: IToDoItem[] = TASKS;
 
   constructor() { }
+
+  create(): void {
+    console.log("Creating...");
+
+    // TODO: validations
+    if (this.currentItem.name == "") {
+      alert("Name is required!");
+      return;
+    }
+
+    // add a copy of the currentItem to the items collection
+    this.items.push({ ...this.currentItem });
+  }
 
   done(item: IToDoItem): void {
     item.completed = true;
