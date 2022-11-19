@@ -1,3 +1,4 @@
+import { AddPostComponent } from './posts/add-post/add-post.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
@@ -8,6 +9,7 @@ const routes: Routes = [
   { path: '', component: TodoListComponent },
   { path: 'tasks', component: TodoListComponent },
   { path: 'users', component: UserListComponent },
+  { path: 'add-post', component: AddPostComponent },
   //{ path: '*', component: UserListComponent }
 ]
 

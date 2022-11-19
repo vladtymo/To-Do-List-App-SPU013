@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app/app.component';
@@ -12,13 +12,15 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './header/header.component';
+import { AddPostComponent } from './posts/add-post/add-post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodoListComponent,
     UserListComponent,
-    HeaderComponent
+    HeaderComponent,
+    AddPostComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,8 @@ import { HeaderComponent } from './header/header.component';
     FormsModule,
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

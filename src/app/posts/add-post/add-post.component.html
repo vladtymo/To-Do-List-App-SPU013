@@ -1,0 +1,18 @@
+<h1>Create New Post</h1>
+<div class="container">
+    <form [formGroup]="postForm" (ngSubmit)="createPost()">
+        <mat-form-field appearance="fill">
+            <mat-label>Title</mat-label>
+            <input matInput type="text" required formControlName="title">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>Body</mat-label>
+            <input matInput type="text" required formControlName="body">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+            <mat-label>User ID</mat-label>
+            <input matInput type="number" min="0" required formControlName="userId">
+        </mat-form-field>
+        <button type="submit" mat-raised-button color="primary">Create Post</button>
+    </form>
+</div>
