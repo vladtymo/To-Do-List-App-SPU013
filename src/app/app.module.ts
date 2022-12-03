@@ -13,6 +13,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './header/header.component';
 import { AddPostComponent } from './posts/add-post/add-post.component';
+import { LaptopListComponent } from './laptops/laptop-list/laptop-list.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AddPostComponent } from './posts/add-post/add-post.component';
     TodoListComponent,
     UserListComponent,
     HeaderComponent,
-    AddPostComponent
+    AddPostComponent,
+    LaptopListComponent
   ],
   imports: [
     BrowserModule,
